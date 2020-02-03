@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 01/10/20 11:07:03 by Eclipse SUMO netconvert Version 1.3.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="ArterialIntersection.nod.xml"/>
+        <edge-files value="ArterialIntersection.edg.xml"/>
+        <connection-files value="ArterialIntersection.con.xml"/>
+    </input>
+
+    <output>
+        <output-file value="ArterialIntersection.net.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<net version="1.3" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="250.00,60.00" convBoundary="0.00,0.00,500.00,120.00" origBoundary="-5000.00,-60.00,250.00,60.00" projParameter="!"/>
+
+    <edge id=":12_output_0" function="internal">
+        <lane id=":12_output_0_0" index="0" speed="120.00" length="6.97" shape="-53.46,-9.18 -51.41,-8.93 -50.00,-8.80 -48.58,-8.76 -46.51,-8.75"/>
+    </edge>
+    <edge id=":12_output_1" function="internal">
+        <lane id=":12_output_1_0" index="0" speed="120.00" length="19.99" shape="-26.59,-7.00 -46.51,-5.25"/>
+        <lane id=":12_output_1_1" index="1" speed="120.00" length="19.99" shape="-26.59,-3.50 -46.51,-1.75"/>
+        <lane id=":12_output_1_2" index="2" speed="120.00" length="19.99" shape="-26.59,0.00 -46.51,1.75"/>
+        <lane id=":12_output_1_3" index="3" speed="120.00" length="19.99" shape="-26.59,3.50 -46.51,5.25"/>
+        <lane id=":12_output_1_4" index="4" speed="120.00" length="19.99" shape="-26.59,7.00 -46.51,8.75"/>
+    </edge>
+    <edge id=":23_output_0" function="internal">
+        <lane id=":23_output_0_0" index="0" speed="120.00" length="0.98" shape="49.46,-8.75 49.71,-8.72 49.93,-8.63 50.11,-8.48 50.25,-8.27"/>
+    </edge>
+    <edge id=":23_output_1" function="internal">
+        <lane id=":23_output_1_0" index="0" speed="120.00" length="12.63" shape="49.46,-5.25 53.18,-5.52 55.70,-6.13 58.21,-6.73 61.93,-7.00"/>
+        <lane id=":23_output_1_1" index="1" speed="120.00" length="12.63" shape="49.46,-1.75 53.18,-2.02 55.70,-2.63 58.21,-3.23 61.93,-3.50"/>
+        <lane id=":23_output_1_2" index="2" speed="120.00" length="12.63" shape="49.46,1.75 53.18,1.48 55.70,0.88 58.21,0.27 61.93,0.00"/>
+        <lane id=":23_output_1_3" index="3" speed="120.00" length="12.63" shape="49.46,5.25 53.18,4.98 55.70,4.38 58.21,3.77 61.93,3.50"/>
+        <lane id=":23_output_1_4" index="4" speed="120.00" length="12.63" shape="49.46,8.75 53.18,8.48 55.70,7.88 58.21,7.27 61.93,7.00"/>
+    </edge>
+
+    <edge id="12_u" from="12_input" to="12_output" priority="-1">
+        <lane id="12_u_0" index="0" speed="120.00" length="0.20" customShape="1" shape="-26.79,-7.00 -26.59,-7.00"/>
+        <lane id="12_u_1" index="1" speed="120.00" length="0.20" customShape="1" shape="-26.79,-3.50 -26.59,-3.50"/>
+        <lane id="12_u_2" index="2" speed="120.00" length="0.20" customShape="1" shape="-26.79,0.00 -26.59,0.00"/>
+        <lane id="12_u_3" index="3" speed="120.00" length="0.20" customShape="1" shape="-26.79,3.50 -26.59,3.50"/>
+        <lane id="12_u_4" index="4" speed="120.00" length="0.20" customShape="1" shape="-26.79,7.00 -26.59,7.00"/>
+    </edge>
+    <edge id="23_u" from="12_output" to="23_output" priority="-1">
+        <lane id="23_u_0" index="0" speed="120.00" length="95.97" customShape="1" shape="-46.51,-8.75 49.46,-8.75"/>
+        <lane id="23_u_1" index="1" speed="120.00" length="95.97" customShape="1" shape="-46.51,-5.25 49.46,-5.25"/>
+        <lane id="23_u_2" index="2" speed="120.00" length="95.97" customShape="1" shape="-46.51,-1.75 49.46,-1.75"/>
+        <lane id="23_u_3" index="3" speed="120.00" length="95.97" customShape="1" shape="-46.51,1.75 49.46,1.75"/>
+        <lane id="23_u_4" index="4" speed="120.00" length="95.97" customShape="1" shape="-46.51,5.25 49.46,5.25"/>
+        <lane id="23_u_5" index="5" speed="120.00" length="95.97" customShape="1" shape="-46.51,8.75 49.46,8.75"/>
+    </edge>
+    <edge id="34_u" from="23_output" to="34_output" priority="-1">
+        <lane id="34_u_0" index="0" speed="120.00" length="188.07" customShape="1" shape="61.93,-7.00 250.00,-7.00"/>
+        <lane id="34_u_1" index="1" speed="120.00" length="188.07" customShape="1" shape="61.93,-3.50 250.00,-3.50"/>
+        <lane id="34_u_2" index="2" speed="120.00" length="188.07" customShape="1" shape="61.93,0.00 250.00,0.00"/>
+        <lane id="34_u_3" index="3" speed="120.00" length="188.07" customShape="1" shape="61.93,3.50 250.00,3.50"/>
+        <lane id="34_u_4" index="4" speed="120.00" length="188.07" customShape="1" shape="61.93,7.00 250.00,7.00"/>
+    </edge>
+    <edge id="36_u" from="23_output" to="36_output" priority="-1">
+        <lane id="36_u_0" index="0" speed="120.00" length="20.71" customShape="1" shape="50.25,-8.27 60.00,10.00"/>
+    </edge>
+    <edge id="52_u" from="52_input" to="12_output" priority="-1">
+        <lane id="52_u_0" index="0" speed="120.00" length="6.59" customShape="1" shape="-60.00,-10.00 -53.46,-9.18"/>
+    </edge>
+
+    <junction id="12_input" type="dead_end" x="0.00" y="60.00" incLanes="" intLanes="" shape="0.00,8.60 0.00,-8.60"/>
+    <junction id="12_output" type="priority" x="200.00" y="60.00" incLanes="52_u_0 12_u_0 12_u_1 12_u_2 12_u_3 12_u_4" intLanes=":12_output_0_0 :12_output_1_0 :12_output_1_1 :12_output_1_2 :12_output_1_3 :12_output_1_4" shape="-46.51,10.35 -46.51,-10.35 -49.02,-10.37 -49.90,-10.40 -50.77,-10.47 -51.83,-10.59 -53.26,-10.77 -53.66,-7.60 -53.39,-8.60 -53.39,8.60 -50.82,9.05 -49.08,9.90 -48.01,10.22">
+        <request index="0" response="000000" foes="000000" cont="0"/>
+        <request index="1" response="000000" foes="000000" cont="0"/>
+        <request index="2" response="000000" foes="000000" cont="0"/>
+        <request index="3" response="000000" foes="000000" cont="0"/>
+        <request index="4" response="000000" foes="000000" cont="0"/>
+        <request index="5" response="000000" foes="000000" cont="0"/>
+    </junction>
+    <junction id="23_output" type="priority" x="300.00" y="60.00" incLanes="23_u_0 23_u_1 23_u_2 23_u_3 23_u_4 23_u_5" intLanes=":23_output_0_0 :23_output_1_0 :23_output_1_1 :23_output_1_2 :23_output_1_3 :23_output_1_4" shape="48.84,-7.52 51.67,-9.03 51.11,-9.76 50.76,-10.02 50.37,-10.20 49.94,-10.31 49.46,-10.35 49.46,10.35 52.13,10.22 54.09,9.90 57.30,9.05 59.26,8.73 61.93,8.60 61.93,-8.60 57.77,-8.57 54.40,-8.48 51.83,-8.33 50.04,-8.12 49.05,-7.85">
+        <request index="0" response="000000" foes="000000" cont="0"/>
+        <request index="1" response="000000" foes="000000" cont="0"/>
+        <request index="2" response="000000" foes="000000" cont="0"/>
+        <request index="3" response="000000" foes="000000" cont="0"/>
+        <request index="4" response="000000" foes="000000" cont="0"/>
+        <request index="5" response="000000" foes="000000" cont="0"/>
+    </junction>
+    <junction id="34_output" type="dead_end" x="500.00" y="60.00" incLanes="34_u_0 34_u_1 34_u_2 34_u_3 34_u_4" intLanes="" shape="500.00,-8.60 500.00,8.60"/>
+    <junction id="36_output" type="dead_end" x="310.00" y="120.00" incLanes="36_u_0" intLanes="" shape="162.45,198.69 159.63,200.20"/>
+    <junction id="52_input" type="dead_end" x="190.00" y="0.00" incLanes="" intLanes="" shape="187.19,22.51 187.58,19.34"/>
+
+    <connection from="12_u" to="23_u" fromLane="0" toLane="1" via=":12_output_1_0" dir="s" state="M"/>
+    <connection from="12_u" to="23_u" fromLane="1" toLane="2" via=":12_output_1_1" dir="s" state="M"/>
+    <connection from="12_u" to="23_u" fromLane="2" toLane="3" via=":12_output_1_2" dir="s" state="M"/>
+    <connection from="12_u" to="23_u" fromLane="3" toLane="4" via=":12_output_1_3" dir="s" state="M"/>
+    <connection from="12_u" to="23_u" fromLane="4" toLane="5" via=":12_output_1_4" dir="s" state="M"/>
+    <connection from="23_u" to="36_u" fromLane="0" toLane="0" via=":23_output_0_0" dir="L" state="M"/>
+    <connection from="23_u" to="34_u" fromLane="1" toLane="0" via=":23_output_1_0" dir="s" state="M"/>
+    <connection from="23_u" to="34_u" fromLane="2" toLane="1" via=":23_output_1_1" dir="s" state="M"/>
+    <connection from="23_u" to="34_u" fromLane="3" toLane="2" via=":23_output_1_2" dir="s" state="M"/>
+    <connection from="23_u" to="34_u" fromLane="4" toLane="3" via=":23_output_1_3" dir="s" state="M"/>
+    <connection from="23_u" to="34_u" fromLane="5" toLane="4" via=":23_output_1_4" dir="s" state="M"/>
+    <connection from="52_u" to="23_u" fromLane="0" toLane="0" via=":12_output_0_0" dir="r" state="M"/>
+
+    <connection from=":12_output_0" to="23_u" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":12_output_1" to="23_u" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":12_output_1" to="23_u" fromLane="1" toLane="2" dir="s" state="M"/>
+    <connection from=":12_output_1" to="23_u" fromLane="2" toLane="3" dir="s" state="M"/>
+    <connection from=":12_output_1" to="23_u" fromLane="3" toLane="4" dir="s" state="M"/>
+    <connection from=":12_output_1" to="23_u" fromLane="4" toLane="5" dir="s" state="M"/>
+    <connection from=":23_output_0" to="36_u" fromLane="0" toLane="0" dir="L" state="M"/>
+    <connection from=":23_output_1" to="34_u" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":23_output_1" to="34_u" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":23_output_1" to="34_u" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":23_output_1" to="34_u" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":23_output_1" to="34_u" fromLane="4" toLane="4" dir="s" state="M"/>
+
+</net>
