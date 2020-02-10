@@ -40,27 +40,27 @@ def Generate_edge_elements_approach(filename = sumo_file_folder  + 'ArterialInte
         edges['12_u'] = etree.SubElement(net, 'edge', {'from':'12_input','to':'12_output'}, function = "normal", id = "12_u",\
                                  numLanes = str(5))
         start_coor = (offset_x - x2/2.0 - x3, offset_y - 2.0*lane_width)
-        end_coor = (offset_x - x2/2.0, offset_y - 2.0*lane_width)
+        end_coor = (offset_x - x2/2.0, offset_y - 1.5*lane_width)
         lanes['12_u_lane_1'] = etree.SubElement(edges['12_u'], 'lane',index = str(0),\
                                          speed = str(vf), length = str(x1),\
                                     shape = str(start_coor[0])+','+str(start_coor[1])+' '+str(end_coor[0])+','+str(end_coor[1]))
         start_coor = (offset_x - x2/2.0 - x3, offset_y - 1.0*lane_width)
-        end_coor = (offset_x - x2/2.0, offset_y - 1.0*lane_width)
+        end_coor = (offset_x - x2/2.0, offset_y - 0.5*lane_width)
         lanes['12_u_lane_2'] = etree.SubElement(edges['12_u'], 'lane',index = str(1),\
                                          speed = str(vf), length = str(x1),\
                                     shape = str(start_coor[0])+','+str(start_coor[1])+' '+str(end_coor[0])+','+str(end_coor[1]))
-        start_coor = (offset_x - x2/2.0 - x3, 1.0*offset_y)
-        end_coor = (offset_x - x2/2.0, 1.0*offset_y)
+        start_coor = (offset_x - x2/2.0 - x3, offset_y)
+        end_coor = (offset_x - x2/2.0, offset_y + 0.5*lane_width)
         lanes['12_u_lane_3'] = etree.SubElement(edges['12_u'], 'lane',index = str(2),\
                                          speed = str(vf), length = str(x1),\
                                     shape = str(start_coor[0])+','+str(start_coor[1])+' '+str(end_coor[0])+','+str(end_coor[1]))
         start_coor = (offset_x - x2/2.0 - x3, offset_y + 1.0*lane_width)
-        end_coor = (offset_x - x2/2.0, offset_y + 1.0*lane_width)
+        end_coor = (offset_x - x2/2.0, offset_y + 1.5*lane_width)
         lanes['12_u_lane_4'] = etree.SubElement(edges['12_u'], 'lane',index = str(3),\
                                          speed = str(vf), length = str(x1),\
                                     shape = str(start_coor[0])+','+str(start_coor[1])+' '+str(end_coor[0])+','+str(end_coor[1]))
         start_coor = (offset_x - x2/2.0 - x3, offset_y + 2.0*lane_width)
-        end_coor = (offset_x - x2/2.0, offset_y + 2.0*lane_width)
+        end_coor = (offset_x - x2/2.0, offset_y + 2.5*lane_width)
         lanes['12_u_lane_5'] = etree.SubElement(edges['12_u'], 'lane',index = str(4),\
                                          speed = str(vf), length = str(x1),\
                                     shape = str(start_coor[0])+','+str(start_coor[1])+' '+str(end_coor[0])+','+str(end_coor[1]))
@@ -73,7 +73,7 @@ def Generate_edge_elements_approach(filename = sumo_file_folder  + 'ArterialInte
         lanes['23_u_lane_1'] = etree.SubElement(edges['23_u'], 'lane',index = str(0),\
                                          speed = str(vf), length = str(x2),\
                                     shape = str(start_coor[0])+','+str(start_coor[1])+' '+str(end_coor[0])+','+str(end_coor[1]))
-        start_coor = (offset_x - x2/.02, offset_y - 1.5*lane_width)
+        start_coor = (offset_x - x2/2.0, offset_y - 1.5*lane_width)
         end_coor = (offset_x + x2/2.0, offset_y - 1.5*lane_width)
         lanes['23_u_lane_2'] = etree.SubElement(edges['23_u'], 'lane',index = str(1),\
                                          speed = str(vf), length = str(x2),\
@@ -102,31 +102,31 @@ def Generate_edge_elements_approach(filename = sumo_file_folder  + 'ArterialInte
         edges['34_u'] = etree.SubElement(net, 'edge',{'from':'23_output','to':'34_output'}, function = "normal", id = "34_u",numLanes=str(5))
         #coor of the lanes
         end_coor = (offset_x + x2/2.0 +x3, offset_y - 2.0*lane_width)
-        start_coor = (offset_x + x2/2.0, offset_y - 2.0*lane_width)
+        start_coor = (offset_x + x2/2.0, offset_y - 1.5*lane_width)
         lanes['34_u_lane_1'] = etree.SubElement(edges['34_u'], 'lane',index = str(0),\
                                          speed = str(vf), length = str(x3),\
                                     shape = str(start_coor[0])+','+str(start_coor[1])+' '+str(end_coor[0])+','+str(end_coor[1]))
         
         end_coor = (offset_x + x2/2.0 +x3, offset_y - 1.0*lane_width)
-        start_coor = (offset_x + x2/2.0, offset_y - 1.0*lane_width)
+        start_coor = (offset_x + x2/2.0, offset_y - 0.5*lane_width)
         lanes['34_u_lane_2'] = etree.SubElement(edges['34_u'], 'lane',index = str(1),\
                                          speed = str(vf), length = str(x3),\
                                     shape = str(start_coor[0])+','+str(start_coor[1])+' '+str(end_coor[0])+','+str(end_coor[1]))
         
         end_coor = (offset_x + x2/2.0 +x3, 1.0*offset_y)
-        start_coor = (offset_x + x2/2.0, 1.0*offset_y)
+        start_coor = (offset_x + x2/2.0, offset_y + 0.5*lane_width)
         lanes['34_u_lane_3'] = etree.SubElement(edges['34_u'], 'lane',index = str(2),\
                                          speed = str(vf), length = str(x3),\
                                     shape = str(start_coor[0])+','+str(start_coor[1])+' '+str(end_coor[0])+','+str(end_coor[1]))
         
         end_coor = (offset_x + x2/2.0 +x3, offset_y + 1.0*lane_width)
-        start_coor = (offset_x + x2/2.0, offset_y + 1.0*lane_width)
+        start_coor = (offset_x + x2/2.0, offset_y + 1.5*lane_width)
         lanes['34_u_lane_4'] = etree.SubElement(edges['34_u'], 'lane',index = str(3),\
                                          speed = str(vf), length = str(x3),\
                                     shape = str(start_coor[0])+','+str(start_coor[1])+' '+str(end_coor[0])+','+str(end_coor[1]))
         
         end_coor = (offset_x + x2/2.0 +x3, offset_y + 2.0*lane_width)
-        start_coor = (offset_x + x2/2.0, offset_y + 2.0*lane_width)
+        start_coor = (offset_x + x2/2.0, offset_y + 2.5*lane_width)
         lanes['34_u_lane_5'] = etree.SubElement(edges['34_u'], 'lane',index = str(4),\
                                          speed = str(vf), length = str(x3),\
                                     shape = str(start_coor[0])+','+str(start_coor[1])+' '+str(end_coor[0])+','+str(end_coor[1]))
@@ -134,7 +134,7 @@ def Generate_edge_elements_approach(filename = sumo_file_folder  + 'ArterialInte
         edges['52_u'] = etree.SubElement(net, 'edge',{'from':'52_input','to':'12_output'} ,function = "normal", id = "52_u",\
                                   numLanes=str(1))
         
-        start_coor = (offset_x - x4/((x4**0.5)*1.0) -x2/2.0, offset_y - x4/((x4**0.5)*1.0))
+        start_coor = (offset_x - x4/((2**0.5)*1.0) -x2/2.0, offset_y - x4/((2**0.5)*1.0))
         end_coor = (offset_x - x2/2.0  , offset_y - 2.5*lane_width)
         lanes['52_u_lane_1'] = etree.SubElement(edges['52_u'], 'lane',index = str(0),\
                                          speed = str(vf), length = str(x4),\
@@ -145,7 +145,7 @@ def Generate_edge_elements_approach(filename = sumo_file_folder  + 'ArterialInte
         edges['36_u'] = etree.SubElement(net, 'edge', {'from':'23_output','to':'36_output'} ,function = "normal", id = "36_u",\
                                   numLanes=str(1))
         start_coor = (offset_x + x2/2.0 , offset_y - 2.5*lane_width)
-        end_coor = (offset_x + x5/((x5**0.5)*1.0) + x2/2.0, offset_y + x5/(1.0*(x5**0.5)))
+        end_coor = (offset_x + x5/((2**0.5)*1.0) + x2/2.0, offset_y - x5/(1.0*(2**0.5)))
         lanes['36_u_lane_1'] = etree.SubElement(edges['36_u'], 'lane',index = str(0),\
                                          speed = str(vf), length = str(x5),\
                                     shape = str(start_coor[0])+','+str(start_coor[1])+' '+str(end_coor[0])+','+str(end_coor[1]))
@@ -171,16 +171,16 @@ def Generate_node_file(filename = sumo_file_folder + 'ArterialIntersection.nod.x
                                      y = str(0.0+offsety))
                                      
         etree.SubElement(nodes, 'node', id = '36_output',\
-                                     y = str(x5/(1.0*(x5**0.5))+x2/2.0+offsetx),\
-                                     x = str(x5/(1.0*(x5**0.5))+x2/2.0+offsety))
+                                     y = str(-x5/(1.0*(2**0.5))+offsety),\
+                                     x = str(x5/(1.0*(2**0.5))+x2/2.0+offsetx))
 
         etree.SubElement(nodes, 'node', id = '52_input', \
-                                     y = str(-x4/(1.0*(x4**0.5))-x2/2.0+offsetx),\
-                                     x = str(-x4/(1.0*(x4**0.5))-x2/2.0+offsety))
+                                     y = str(-x4/(1.0*(2**0.5))+offsety),\
+                                     x = str(-x4/(1.0*(2**0.5))-x2/2.0+offsetx))
 
         etree.SubElement(nodes, 'node', id = '23_output', \
-                                     x = str(x2/2.0+offsety),\
-                                     y = str(0.0+offsetx))
+                                     x = str(x2/2.0+offsetx),\
+                                     y = str(0.0+offsety))
     
         outFile = open(filename, 'wb')
         outFile.write(etree.tostring(doc_node))
@@ -202,21 +202,21 @@ def connection_file(filename = sumo_file_folder + 'ArterialIntersection.con.xml'
         
 
         #at the interface
-        etree.SubElement(connections, 'connection',{'from':'12_u','to':'23_u'},{'fromLane':'0','toLane':'0'})
-        etree.SubElement(connections, 'connection',{'from':'12_u','to':'23_u'},{'fromLane':'1','toLane':'1'})
-        etree.SubElement(connections, 'connection',{'from':'12_u','to':'23_u'},{'fromLane':'2','toLane':'2'})
-        etree.SubElement(connections, 'connection',{'from':'12_u','to':'23_u'},{'fromLane':'3','toLane':'3'})
-        etree.SubElement(connections, 'connection',{'from':'12_u','to':'23_u'},{'fromLane':'4','toLane':'4'})
+        etree.SubElement(connections, 'connection',{'from':'12_u','to':'23_u'},{'fromLane':'0','toLane':'1'})
+        etree.SubElement(connections, 'connection',{'from':'12_u','to':'23_u'},{'fromLane':'1','toLane':'2'})
+        etree.SubElement(connections, 'connection',{'from':'12_u','to':'23_u'},{'fromLane':'2','toLane':'3'})
+        etree.SubElement(connections, 'connection',{'from':'12_u','to':'23_u'},{'fromLane':'3','toLane':'4'})
+        etree.SubElement(connections, 'connection',{'from':'12_u','to':'23_u'},{'fromLane':'4','toLane':'5'})
         
-        etree.SubElement(connections, 'connection',{'from':'23_u','to':'34_u'},{'fromLane':'0','toLane':'0'})
-        etree.SubElement(connections, 'connection',{'from':'23_u','to':'34_u'},{'fromLane':'1','toLane':'1'})
-        etree.SubElement(connections, 'connection',{'from':'23_u','to':'34_u'},{'fromLane':'2','toLane':'2'})
-        etree.SubElement(connections, 'connection',{'from':'23_u','to':'34_u'},{'fromLane':'3','toLane':'3'})
-        etree.SubElement(connections, 'connection',{'from':'23_u','to':'34_u'},{'fromLane':'4','toLane':'4'})
+        etree.SubElement(connections, 'connection',{'from':'23_u','to':'34_u'},{'fromLane':'1','toLane':'0'})
+        etree.SubElement(connections, 'connection',{'from':'23_u','to':'34_u'},{'fromLane':'2','toLane':'1'})
+        etree.SubElement(connections, 'connection',{'from':'23_u','to':'34_u'},{'fromLane':'3','toLane':'2'})
+        etree.SubElement(connections, 'connection',{'from':'23_u','to':'34_u'},{'fromLane':'4','toLane':'3'})
+        etree.SubElement(connections, 'connection',{'from':'23_u','to':'34_u'},{'fromLane':'5','toLane':'4'})
         
-        etree.SubElement(connections, 'connection',{'from':'23_u','to':'36_u'},{'fromLane':'5','toLane':'0'})
+        etree.SubElement(connections, 'connection',{'from':'23_u','to':'36_u'},{'fromLane':'0','toLane':'0'})
 
-        etree.SubElement(connections, 'connection',{'from':'52_u','to':'23_u'},{'fromLane':'0','toLane':'5'})
+        etree.SubElement(connections, 'connection',{'from':'52_u','to':'23_u'},{'fromLane':'0','toLane':'0'})
         
 
         outFile = open(filename, 'wb')
